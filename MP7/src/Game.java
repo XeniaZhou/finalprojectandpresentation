@@ -27,12 +27,12 @@ static Scanner myScan = new Scanner(System.in);
 		 Player player1 = new Player();
 		 player1.setID(myScan.next());
 		 player1.setColor(Color.black);
-		 System.out.println(player1.getID() + ", you are black chess!");
+		 System.out.println(player1.getID() + ", you will go as black chess!");
 		 System.out.println("Name Yourself, Player 2!");
 		 Player player2 = new Player();
 		 player2.setID(myScan.next());
 		 player2.setColor(Color.white);
-		 System.out.println(player2.getID() + ", you are white chess!");
+		 System.out.println(player2.getID() + ", you will go as white chess!");
 
 		 frame.add(panel);
 		 frame.setLayout(new BorderLayout());           

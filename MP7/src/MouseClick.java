@@ -125,7 +125,7 @@ public class MouseClick extends JPanel implements MouseListener{
             if (panel.getArray()[trueX][trueY] % 2 != 0)  
             {  
             	player1.addScore();
-            	System.out.println(player1.getID() + " Win!");
+            	System.out.println(player1.getID() + " Wins!");
             	System.out.println("Total Score: " + player1.getScore());
             	canMove = false;
             	System.out.println("Do you want to try again?(Y)");
@@ -137,7 +137,7 @@ public class MouseClick extends JPanel implements MouseListener{
             	}
             } else {  
             	player2.addScore();
-            	System.out.println(player2.getID() + " Win!");
+            	System.out.println(player2.getID() + " Wins!");
             	System.out.println("Total Score: " + player2.getScore());
             	canMove = false;
             	System.out.println("Do you want to try again?(Y)");
@@ -179,7 +179,7 @@ public class MouseClick extends JPanel implements MouseListener{
             if (panel.getArray()[trueX][trueY]%2 != 0)  
             {  
                 player1.addScore();
-            	System.out.println(player1.getID() + " Win!");
+            	System.out.println(player1.getID() + " Wins!");
             	System.out.println("Total Score: " + player1.getScore());
             	canMove = false;
             	System.out.println("Do you want to try again?(Y)");
@@ -191,7 +191,7 @@ public class MouseClick extends JPanel implements MouseListener{
             	}
             } else {  
             	player2.addScore();
-            	System.out.println(player2.getID() + " Win!");
+            	System.out.println(player2.getID() + " Wins!");
             	System.out.println("Total Score: " + player2.getScore());
             	canMove = false;
             	System.out.println("Do you want to try again?(Y)");
@@ -233,7 +233,7 @@ public class MouseClick extends JPanel implements MouseListener{
             if (panel.getArray()[trueX][trueY] % 2 != 0)  
             {  
             	player1.addScore();
-            	System.out.println(player1.getID() + " Win!");
+            	System.out.println(player1.getID() + " Wins!");
             	System.out.println("Total Score: " + player1.getScore());
             	canMove = false;
             	System.out.println("Do you want to try again?(Y)");
@@ -245,7 +245,7 @@ public class MouseClick extends JPanel implements MouseListener{
             	}
             } else {  
             	player2.addScore();
-            	System.out.println(player2.getID() + " Win!");
+            	System.out.println(player2.getID() + " Wins!");
             	System.out.println("Total Score: " + player2.getScore());
             	canMove = false;
             	System.out.println("Do you want to try again?(Y)");
@@ -287,7 +287,7 @@ public class MouseClick extends JPanel implements MouseListener{
             if (panel.getArray()[trueX][trueY] % 2 != 0)  
             {  
             	player1.addScore();
-            	System.out.println(player1.getID() + " Win!");
+            	System.out.println(player1.getID() + " Wins!");
             	System.out.println("Total Score: " + player1.getScore());
             	canMove = false;
             	System.out.println("Do you want to try again?(Y)");
@@ -299,7 +299,7 @@ public class MouseClick extends JPanel implements MouseListener{
             	}
             } else {  
             	player2.addScore();
-            	System.out.println(player2.getID() + " Win!");
+            	System.out.println(player2.getID() + " Wins!");
             	System.out.println("Total Score: " + player2.getScore());
             	canMove = false;
             	System.out.println("Do you want to try again?(Y)");
