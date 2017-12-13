@@ -6,11 +6,19 @@ import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-
+/**
+ * 
+ * @author 11429
+ * this is the class to run the whole gobang game.
+ */
 public class Game extends JFrame{
+	/**
+	 * default.
+	 */
+	private static final long serialVersionUID = 1L;
 static Scanner myScan = new Scanner(System.in);
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		 JFrame frame = new JFrame();
 		 frame.setSize(700, 700);
 		 Panel panel = new Panel();
@@ -35,10 +43,7 @@ static Scanner myScan = new Scanner(System.in);
 		 MouseClick click = new MouseClick(panel, player1, player2);
 		 pa.addMouseListener(click);
 		 frame.add(pa);
-		 frame.setVisible(true);
-	        
-		 
+		 frame.setVisible(true);	        	 
 	}
-
 } 
 

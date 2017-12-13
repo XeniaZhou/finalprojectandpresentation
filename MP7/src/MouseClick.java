@@ -6,24 +6,34 @@ import java.awt.event.MouseListener;
 import java.util.Scanner;
 import javax.swing.JPanel;
 /**
-	 * 
+	 * this class used to catch the mouse clicks, 
+	 * draw the chess and indicate which player is the winner.
 	 */
 public class MouseClick extends JPanel implements MouseListener{
 	static Scanner myScan = new Scanner(System.in);
+	
 	private static final long serialVersionUID = 1L;
+	
 	private int num = 0;
+	
 	private boolean canMove = true;
+	
 	private Panel panel;
-	private int trueX;
+	
+	private int trueX;	
 	private int trueY;
+	
 	private Player player1, player2;
+	
 	private Graphics2D g;
+	
 	public MouseClick(Panel p, Player a, Player b) {
 		this.panel = p;
 		this.player1 = a;
 		this.player2 = b;
 		g = (Graphics2D)this.panel.getGraphics();
 	}
+	
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
 		if(canMove) {
@@ -54,10 +64,9 @@ public class MouseClick extends JPanel implements MouseListener{
 			}
         } else {
         	System.out.println("This turn has been finished!");
-        }
-		// TODO Auto-generated method stub
-		
+        }		
 	}
+	
 	@Override
 	public void mouseEntered(MouseEvent arg0) {
 		// TODO Auto-generated method stub
@@ -85,11 +94,11 @@ public class MouseClick extends JPanel implements MouseListener{
 	public int getTrueY() {
 		return trueY;
 	}
+	
 	private int count;
 
 	public void judge()  
     {  
-
         count = 1;  
         //column  
         for (int i = trueX + 1; i < panel.getColumn(); i++)  
@@ -194,8 +203,7 @@ public class MouseClick extends JPanel implements MouseListener{
             	}
             }  
             return;  
-        }  
-      
+        }   
         count = 1;  
         //left top to right bottom  
         for (int i = trueX - 1, j = trueY - 1; i >= 0 && j >= 0; i--, j--)  

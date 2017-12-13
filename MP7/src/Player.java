@@ -1,18 +1,20 @@
 import java.awt.Color;
 
-import javax.swing.JPanel;
-
+/**
+ * 
+ * @author 11429
+ * this class used to store the information of players.
+ */
 public class Player{
 	private String id;
 	private Color color;
 	private int score = 0;
+	
 	public Color getColor() {
-		// TODO Auto-generated method stub
 		return color;
 	}
 
 	public String getID() {
-		// TODO Auto-generated method stub
 		return id;
 	}
 	public int getScore() {
